@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: brown;
+    height: 80px;
+  }
+  .header > h1{
+    color: whitesmoke;
+    margin-left: 50px;
+  }
+  form{
+    min-height: 50px;
+    color: #ecf0f1;
+    padding: 15px 10px 5px 10px;
+    box-shadow: 3px 5px 15px -5px rgba(0,0,0,.3);
+    border-radius: 10px;
+    position: relative;
+  }
+  input{
+    width: 100%;
+    line-height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  textarea{
+    width: 100%;
+    line-height: 80px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .main_note{
+    width: 400px;
+    padding: 15px 10px 5px 10px;
+    margin: 20px auto;
+  }
+  .note{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 3px 5px 15px -5px rgba(0,0,0,.3);
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .del-note{
+    float: right;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+  }
+  .del-note:hover{
+    background-color: wheat;
+    border-radius: 50px;
+  }
+  
